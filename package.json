@@ -1,7 +1,7 @@
 {
   "name": "vue-rss-parser",
-  "version": "0.0.1",
-  "description": "A simple component to embed RSS feeds with Vuejs, without styling",
+  "version": "0.0.2",
+  "description": "A simple component to embed RSS feeds with Vue.",
   "keywords": [
     "RSS",
     "Embed",
