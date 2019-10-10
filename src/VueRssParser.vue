@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-rss-feed">
+  <div class="vue-rss-parser">
     <Feed :feedUrl="feedUrl" :name="name" :limit="limit"/>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import Feed from "./components/Feed.vue";
 
 export default {
-  name: "VueRssFeed",
+  name: "VueRssParser",
   components: {
     Feed
   },
@@ -21,13 +21,12 @@ export default {
 </script>
 
 <style scoped>
-.vue-rss-feed {
+.vue-rss-parser {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 600px;
   width: 100%;
   text-align: center;
-  color: #2c3e50;
 }
 </style>

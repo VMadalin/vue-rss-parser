@@ -74,9 +74,6 @@ h3 {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
   padding: 1.25rem;
   margin-bottom: 15px;
 }
@@ -92,8 +89,5 @@ h3 {
 .middot {
   font-size: 12px;
   margin: 0 8px;
-}
-a {
-  color: #42b983;
 }
 </style>

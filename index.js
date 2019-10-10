@@ -1,1 +1,1 @@
-module.exports = require('./src/VueRssFeed');
+module.exports = require('./src/VueRssParser');

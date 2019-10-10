@@ -98,12 +98,11 @@ h1 {
   margin: 5px;
   font-size: 20px;
 }
+
 .feed {
   text-align: left;
 }
-a {
-  color: #42b983;
-}
+
 /* CSS Spinner */
 .spinner {
   margin: 40px auto 0;

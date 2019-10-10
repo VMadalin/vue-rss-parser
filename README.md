@@ -1,28 +1,22 @@
-# vue-rss-feed
-A simple component to embed beautiful RSS feeds with Vuejs
-
-## Demo
-![](vue-rss-feed-demo.gif)
-
-
-[demo](https://rssapp.github.io/vue-rss-feed/)
+# vue-rss-parser
+A simple component to embed RSS parsed feeds with Vuejs
 
 ## Install
 
 ```bash
-npm i vue-rss-feed
+npm i vue-rss-parser
 ```
 
 ## Usage
-Import VueRssFeed in your component
+Import VueRssParser in your component
 
 ```js
-import VueRssFeed from "../VueRssFeed.vue";
+import VueRssParser from "vue-rss-parser";
 ...
 export default {
   name: "Demo",
   components: {
-    VueRssFeed
+    VueRssParser
   },
   data() {
     return {
@@ -38,7 +32,7 @@ Then use it in your template
 
 ```HTML
 <template>
- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/>
+ <VueRssParser :feedUrl="feedUrl" :name="name" :limit="limit"/>
 </template>
 ```
 
