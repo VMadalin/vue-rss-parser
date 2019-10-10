@@ -1,4 +1,4 @@
-# vue-rss-feed
+# vue-rss-parser
 A simple component to embed beautiful RSS feeds with Vuejs
 
 ## Demo
