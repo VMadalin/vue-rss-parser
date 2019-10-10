@@ -1,13 +1,13 @@
 <template>
   <div class="article">
-    <div class="title">
-      <a :href="article.link" target="_blank">
+    <a :href="article.link" target="_blank">
+      <div class="image">
+        <img :src="getImageUrl(article['content:encoded'])" :alt="article.title" />
+      </div>
+      <div class="title">
         <h3>{{article.title}}</h3>
-      </a>
-    </div>
-    <div class="body">
-      <p class="content" v-html="article.content"></p>
-    </div>
+      </div>
+    </a>
     <div class="footer">
       <span class="hostname">{{this.getHostname()}}</span>
       <span v-if="article.isoDate" class="middot">&bull;</span>
@@ -57,6 +57,10 @@ export default {
       if (this.article.isoDate) {
         return parseDate(this.article.isoDate);
       }
+    },
+    getImageUrl(string) {
+      const Regex = /<figure><img[^>]*src *= *['\"]?([^'\" >]+)['\"]?[^>]*><\/figure>/g;
+      return Regex.exec(string)[1];
     }
   }
 };
@@ -67,6 +71,7 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
 .article {
   position: relative;
   display: flex;
@@ -75,8 +80,18 @@ h3 {
   word-wrap: break-word;
   background-color: #fff;
   padding: 1.25rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
+
+.article .image {
+  margin-bottom: 12px;
+}
+
+.article .image img {
+  display: block;
+  max-width: 100%;
+}
+
 .body .content {
   margin-top: 5px;
 }

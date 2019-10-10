@@ -1,5 +1,5 @@
 # vue-rss-parser
-A simple component to embed RSS parsed feeds with Vue.
+A simple component to parse and embed Medium RSS feeds with Vue.
 
 ## Install
 
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      feedUrl: "https://rss.app/feeds/hmsyAr3PyniBpmOd.xml",
+      feedUrl: "https://cors-anywhere.herokuapp.com/https://medium.com/feed/0xcert'",
       name: "",
       limit: 5,
     };

@@ -1,8 +1,6 @@
 <template>
   <div v-if="error" class="error">{{error}}</div>
   <div v-else class="feed">
-    <h1 v-if="name">{{name}}</h1>
-    <h1 v-else>{{feed.title}}</h1>
     <div v-if="loading" class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
@@ -94,11 +92,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  margin: 5px;
-  font-size: 20px;
-}
-
 .feed {
   text-align: left;
 }
@@ -114,6 +107,10 @@ h1 {
   color: red;
 }
 
+.articles-container {
+  display: flex;
+}
+
 .spinner > div {
   width: 18px;
   height: 18px;
@@ -121,7 +118,6 @@ h1 {
   background-color: #42b983;
   background-color: #777;
   margin-right: 10px;
-
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;

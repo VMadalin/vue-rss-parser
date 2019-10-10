@@ -1,11 +1,13 @@
 {
   "name": "vue-rss-parser",
-  "version": "0.0.2",
-  "description": "A simple component to embed RSS feeds with Vue.",
+  "version": "0.0.3",
+  "description": "A simple component to parse and embed Medium RSS feeds with Vue.",
   "keywords": [
     "RSS",
     "Embed",
     "RSS Feeds",
+    "Medium",
+    "Medium Feed",
     "VueJS",
     "News Feed"
   ],
@@ -19,23 +21,23 @@
   },
   "private": false,
   "author": {
-    "name": "Max S."
+    "name": "David L."
   },
   "main": "index.js",
   "scripts": {
     "serve": "vue-cli-service serve ./src/demo/demo.js",
     "build-demo": "vue-cli-service build ./src/demo/demo.js --dest docs",
-    "build": "vue-cli-service build --target lib --name VueRssFeed ./src/VueRssParser.vue",
+    "build": "vue-cli-service build --target lib --name VueRssParser ./src/VueRssParser.vue",
     "lint": "vue-cli-service lint"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.3.0",
-    "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-service": "^3.3.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
@@ -62,8 +64,7 @@
     "not ie <= 8"
   ],
   "dependencies": {
-    "element-ui": "^2.5.2",
-    "rss-parser": "^3.6.2",
-    "vue": "^2.5.22"
+    "rss-parser": "^3.7.2",
+    "vue": "^2.6.10"
   }
 }
