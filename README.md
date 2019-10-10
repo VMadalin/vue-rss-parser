@@ -1,5 +1,5 @@
 # vue-rss-parser
-A simple component to embed RSS parsed feeds with Vuejs
+A simple component to embed RSS parsed feeds with Vue.
 
 ## Install
 
