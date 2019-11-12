@@ -1,7 +1,7 @@
 {
   "name": "vue-rss-parser",
-  "version": "0.0.3",
-  "description": "A simple component to parse and embed Medium RSS feeds with Vue.",
+  "version": "0.0.4",
+  "description": "A simple component to parse and embed Medium RSS feed with Vue.",
   "keywords": [
     "RSS",
     "Embed",

@@ -4,15 +4,15 @@
       <div class="image">
         <img :src="getImageUrl(article['content:encoded'])" :alt="article.title" />
       </div>
-      <div class="title">
+      <div class="body">
         <h3>{{article.title}}</h3>
+        <div class="footer">
+          <span class="hostname">{{this.getHostname()}}</span>
+          <span v-if="article.isoDate" class="middot">&bull;</span>
+          <span class="datetime">{{this.getDateTime()}}</span>
+        </div>
       </div>
     </a>
-    <div class="footer">
-      <span class="hostname">{{this.getHostname()}}</span>
-      <span v-if="article.isoDate" class="middot">&bull;</span>
-      <span class="datetime">{{this.getDateTime()}}</span>
-    </div>
   </div>
 </template>
 
@@ -78,7 +78,6 @@ h3 {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   padding: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -92,15 +91,13 @@ h3 {
   max-width: 100%;
 }
 
-.body .content {
-  margin-top: 5px;
-}
 .footer {
   font-size: 13px;
   color: #777;
   display: flex;
   align-items: flex-end;
 }
+
 .middot {
   font-size: 12px;
   margin: 0 8px;
