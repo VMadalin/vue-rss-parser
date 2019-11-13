@@ -59,7 +59,7 @@ export default {
       }
     },
     getImageUrl(string) {
-      const Regex = /<figure><img[^>]*src *= *['\"]?([^'\" >]+)['\"]?[^>]*><\/figure>/g;
+      const Regex = /<figure><img[^>]*src *= *["]?([^'" >]+)['"]?[^>]*><\/figure>/g;
       return Regex.exec(string)[1];
     }
   }
