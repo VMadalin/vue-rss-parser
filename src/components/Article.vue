@@ -78,12 +78,6 @@ h3 {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  padding: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.article .image {
-  margin-bottom: 12px;
 }
 
 .article .image img {
